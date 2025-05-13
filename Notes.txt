@@ -1,0 +1,41 @@
+Dynamic Typing:
+We need NOT to specify the data type. Unlike the other languages where we specifically mention the data type for a variable.
+
+python supports Dynamic typing where we need to specify the data type explicitly.
+
+Static typing: Viceversa of Dynamic typing. we need to specify the data type of the vairable which indicates the data we store in that variable.
+
+Keywords:
+
+Python is a case sensitive programming language.
+
+In programming a keyword is a word that is reserved by a program bcoz the word has a seperate meaning. Keywords can be commands or parameters. Every programming language has a set of Keywords that cannot be used as variable names.
+
+Python provides a module called keyword (note the lowercase "k") that contains a list of reserved keywords in Python.
+
+There are 33 keywords in python.
+Keywords list include:
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+Using these keywords as variable names will result in errors.
+
+Identifier:
+Python Identifier is a name used to identify a variable, function, class, module or other object.
+Rules for setting Identifier:
+1. Only start with alphabet or _(Down slash)
+2. Followed by 0 or more letter,_ and digits
+3. Keywords cannot be used as identifiers
+
+Types of software:
+1. Static software (Uni Directional)
+2. Dynamic software //This highlights the importance of input function which help us to take into input from the user.
+
+Whenever we use input function the programmer will always get the input in the form of string.
+
+Type function:
+This will help us to know about the data type of the value which we give.
+
+Type conversions:
+1. Implicit 
+2. Explicit 
+
