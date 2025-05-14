@@ -26,4 +26,12 @@ print(first + second)
 print(type(first))
 print(type(second))
 
-4+5
+# implicit & explicit conversion
+
+# a=int('4.5')
+# print(a)
+
+#  File "E:\vs code\Practise python\Kwiden.py", line 31, in <module>
+#     a=int('4.5')
+# ValueError: invalid literal for int() with base 10: '4.5'
+

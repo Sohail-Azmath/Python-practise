@@ -39,3 +39,24 @@ Type conversions:
 1. Implicit 
 2. Explicit 
 
+int function:
+This can be used to convert data type into integer.
+Strings with float value cannot be converted into integer.
+
+Ex: int(4.5) this throws an error.
+Type conversions are not permanent operations.
+
+
+Literals:
+It is a raw data given to a variable. In python we have four types of literals. They are:
+1. Numeric literal
+2. String literal
+3. Boolean literal
+4. Special literal
+
+Numeric Literal:
+a. integer
+b. float
+c. complex
+
+
