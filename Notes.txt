@@ -59,4 +59,22 @@ a. integer
 b. float
 c. complex
 
+String literals:
+a. Single quotes
+b. Double quotes
+c. Triple quotes //These are used to print multi line text.
+There is no particular data type called char in python. Everything in python is considered as string.
+Unicode strings are accepted by python. we need to specify the unicode with "u".
+Raw string can be printed in python. Generally raw string is used when we want to print html code which consist of many special characters.
 
+Boolean literal:
+True indicates '1'.
+False indicates '0'.
+a = True + 4 //We encounter a Implicit type conversion which result in the value of a as 5.
+b = False + 10 //the value of false is Implicitly taken as '0' and the value of b is 10.
+
+Special literal
+a = None There is no vairable declaration in py. we use this when we want to declare a varibale and assign none so that ntg is stored in it. This variable remains ideal yet we can use it in future advancements. This is generally helpful in the scenario when we are working with team.
+
+For instance your manager may ask you to declare a variable which he might use later. 
+When we declare 0 or anyother value there is a risk of error in our logic. To avoid such situations we use None.
