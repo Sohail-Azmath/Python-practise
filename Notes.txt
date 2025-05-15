@@ -1,7 +1,7 @@
 Dynamic Typing:
 We need NOT to specify the data type. Unlike the other languages where we specifically mention the data type for a variable.
 
-python supports Dynamic typing where we need to specify the data type explicitly.
+python supports Dynamic typing where we NEED NOT to specify the data type explicitly.
 
 Static typing: Viceversa of Dynamic typing. we need to specify the data type of the vairable which indicates the data we store in that variable.
 
@@ -9,7 +9,7 @@ Keywords:
 
 Python is a case sensitive programming language.
 
-In programming a keyword is a word that is reserved by a program bcoz the word has a seperate meaning. Keywords can be commands or parameters. Every programming language has a set of Keywords that cannot be used as variable names.
+In programming a keyword is a word that is reserved by a programming language because it has a special meaning. Keywords can be commands or parameters. Every programming language has a set of Keywords that cannot be used as variable names.
 
 Python provides a module called keyword (note the lowercase "k") that contains a list of reserved keywords in Python.
 
@@ -28,7 +28,7 @@ Rules for setting Identifier:
 
 Types of software:
 1. Static software (Uni Directional)
-2. Dynamic software //This highlights the importance of input function which help us to take into input from the user.
+2. Dynamic software //This highlights the importance of input function which help us to take input from the user.
 
 Whenever we use input function the programmer will always get the input in the form of string.
 
@@ -59,22 +59,66 @@ a. integer
 b. float
 c. complex
 
+0b1010 #Binary "0b" represent Binary notation
+100 #Decimal
+0o310 #Octal "0o" represent Octal notation
+0x12C #Hexadecimal "0x" represent Hexadecimal notation
+
+Scientific notation = 1.5e2 "e2" represent exponent i.e. 1.5 * 10^2
+Scientific notation = 1.5e-2 "e-2" represent exponent i.e. 1.5 * 10^-2
+x = 5j
+# real and imaginary part of complex number where x.real is real part and x.imag is imaginary part.
+
 String literals:
 a. Single quotes
 b. Double quotes
 c. Triple quotes //These are used to print multi line text.
 There is no particular data type called char in python. Everything in python is considered as string.
-Unicode strings are accepted by python. we need to specify the unicode with "u".
+
+Unicode strings are accepted by python. we need to specify the unicode with "u". This help us to print emojis.
 Raw string can be printed in python. Generally raw string is used when we want to print html code which consist of many special characters.
 
 Boolean literal:
 True indicates '1'.
 False indicates '0'.
-a = True + 4 //We encounter a Implicit type conversion which result in the value of a as 5.
-b = False + 10 //the value of false is Implicitly taken as '0' and the value of b is 10.
+a = True + 4 //We encounter a Implicit type conversion which result in the value of 'a' as 5.
+b = False + 10 //the value of false is Implicitly taken as '0' and the value of 'b' is 10.
 
 Special literal
 a = None There is no vairable declaration in py. we use this when we want to declare a varibale and assign none so that ntg is stored in it. This variable remains ideal yet we can use it in future advancements. This is generally helpful in the scenario when we are working with team.
 
 For instance your manager may ask you to declare a variable which he might use later. 
 When we declare 0 or anyother value there is a risk of error in our logic. To avoid such situations we use None.
+
+Operators:
+1. Arithmetic Operators
+2. Comparison Operators
+3. Logical Operators
+4. Bitwise Operators
+5. Assignment Operators
+6. Identity Operators
+7. Membership Operators
+
+Arithmetic Operators: +, -, /, *, %, //(used to convert quotient into integer), x**y(Double star indicate power)
+
+Comparison operators(Relational operators): >, <, >=, <=, ==, !=
+
+Logical Operators: 
+AND OR NOT
+AND = True when both the values are True
+OR = True when atleast one value is True
+NOT = It shows the opposite of the current value.
+
+Bitwise Operators: useful when working with binary values. These are generally used in image processing.
+&-(BITWISE AND) = It return 1 when both a & b are 1.
+|(BITWISE OR) = It returns 1 when atleast one value is 1.
+>>(LEFT SHIFT) = shift bits to left by the given value
+<<(RIGHT SHIFT) = shift bits to right by the given value.
+^(XOR) = It compares each bit of two numbers and return 1 if the bits are different. 0 is bits are same. 
+~(COMPLIMENT)= turns 0 to 1 and Viceversa
+
+Assignment operator: =
+It is used to store a value to the variable.
+
+Pre-incremenet and post-increment are not allowed in python.
+
