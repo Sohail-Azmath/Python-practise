@@ -149,3 +149,8 @@ We do not have any brackets for if - else.
 If BRANCHING increases includes no. of branches we need to use else if.
 
 Note: In python we write "elif" where as in other languages it is written as "else if".
+
+Indentation:
+Python does not use semi colon(;) and curly braces unlike other programming language.
+Instead the program structure is define by the spaces from the margin. One Decision control statement uses one tab space.
+It improves the code readability and help in easy debugging.
