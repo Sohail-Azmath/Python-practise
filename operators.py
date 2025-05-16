@@ -47,4 +47,17 @@ a /= 2 # a = a / 2
 print("Assignment operator with '/' sign:",a)
 
 # a++ or ++a 
-Both are not valid in python
+# Both are not valid in python
+
+# Identity Operators
+a = 10
+b = 10
+print(a is b)
+
+a= [1,2,3]
+b = [1,2,3]
+print(a is b) # False because a and b are different objects
+
+x = "Delhi"
+
+print("D" not in x)

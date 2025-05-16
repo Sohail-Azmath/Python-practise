@@ -99,17 +99,17 @@ Operators:
 6. Identity Operators
 7. Membership Operators
 
-Arithmetic Operators: +, -, /, *, %, //(used to convert quotient into integer), x**y(Double star indicate power)
+1.Arithmetic Operators: +, -, /, *, %, //(used to convert quotient into integer), x**y(Double star indicate power)
 
-Comparison operators(Relational operators): >, <, >=, <=, ==, !=
+2.Comparison operators(Relational operators): >, <, >=, <=, ==, !=
 
-Logical Operators: 
+3.Logical Operators: 
 AND OR NOT
 AND = True when both the values are True
 OR = True when atleast one value is True
 NOT = It shows the opposite of the current value.
 
-Bitwise Operators: useful when working with binary values. These are generally used in image processing.
+4.Bitwise Operators: useful when working with binary values. These are generally used in image processing.
 &-(BITWISE AND) = It return 1 when both a & b are 1.
 |(BITWISE OR) = It returns 1 when atleast one value is 1.
 >>(LEFT SHIFT) = shift bits to left by the given value
@@ -117,8 +117,26 @@ Bitwise Operators: useful when working with binary values. These are generally u
 ^(XOR) = It compares each bit of two numbers and return 1 if the bits are different. 0 is bits are same. 
 ~(COMPLIMENT)= turns 0 to 1 and Viceversa
 
-Assignment operator: =
+5.Assignment operator: =
 It is used to store a value to the variable.
 
 Pre-incremenet and post-increment are not allowed in python.
 
+6.Identity Operator:
+This indicate the memory location of the variables.
+For instance both the variables may hold the same value yet they are not identical. The memory locations of the variables differ.
+
+If the value of variables is same yet this does not mean that they are at same memory location.
+
+"is" checks if two variables point to the same object (memory location).
+For immutable types (like small integers), Python may reuse objects.
+For mutable types (like lists), each assignment creates a new object.
+
+7.Membership operator:
+This indicate the presence of particular thing(character here) in the container(string here). 
+Note: String in the above context is taken as container for understanding.
+example below: 
+x = "Delhi"
+print("D" not in x)
+
+This is applicable for list, dictionaries, sets etc.
