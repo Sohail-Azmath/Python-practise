@@ -146,3 +146,6 @@ Branching: this is the phenomena where we have two directions to move ahead.
 For instance:
 In login page if the credentials are correct give the profile/home page. If not throw a error which states incrt credentials.
 We do not have any brackets for if - else.
+If BRANCHING increases includes no. of branches we need to use else if.
+
+Note: In python we write "elif" where as in other languages it is written as "else if".
