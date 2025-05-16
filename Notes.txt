@@ -140,3 +140,9 @@ x = "Delhi"
 print("D" not in x)
 
 This is applicable for list, dictionaries, sets etc.
+
+Decision control Statements:
+Branching: this is the phenomena where we have two directions to move ahead. 
+For instance:
+In login page if the credentials are correct give the profile/home page. If not throw a error which states incrt credentials.
+We do not have any brackets for if - else.
