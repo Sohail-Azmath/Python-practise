@@ -168,3 +168,6 @@ Types of loops:
 
 while <condition>:
     code
+
+Random function:
+This is use to select a random number from the given range of numbers.It returns the number from a given range of numbers. It includes the both the numbers.
