@@ -171,3 +171,25 @@ while <condition>:
 
 Random function:
 This is use to select a random number from the given range of numbers.It returns the number from a given range of numbers. It includes the both the numbers.
+
+2. for loop:
+range function: this is used to include the numbers in that range. The end value is not included in the range function.
+It includes start, stop, step.
+
+range(0,5) = here the start number is 0 and end is 5(which is excluded).
+range(5) = The start is assumed as 0 and the end is 5(excluded)
+step parameters is used to create the difference in numbers. When step = 2. The difference between consecutive number is 2.
+
+Sequence: 
+we have a Sequence of characters, strings, list, tuple & Dictionaries.
+
+For loop iterate on Sequence or range function.
+we need not to specify the increment operator or termination condition. We use range function or sequence to end the for loop. 
+
+Tip: When you are unaware about the no. of iterations then use while loop and when you have an clear understanding or no. of iterations use for loop.
+
+Nested loop:
+Loops are placed inside the other loops.
+The outer loop runs first.
+For each iteration of the outer loop, the inner loop runs completely.
+
