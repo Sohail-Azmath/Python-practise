@@ -193,3 +193,16 @@ Loops are placed inside the other loops.
 The outer loop runs first.
 For each iteration of the outer loop, the inner loop runs completely.
 
+Control flow statements:
+Break, continue, pass
+
+Break - use to end the loop and stop iterations.
+Useful in linear searching, where we find the number. Once the number is found we break the iteration. This help us in reducing the time complexity.
+
+continue - use to skip the particular iteration. Loop does not terminate here.
+Usecase: printing product details which are in stock and skipping the iteration for the product which is out of stock.
+
+pass - It is generally used when you are not aware about the logic. So you use pass.
+Pass statement help us to avoid syntax error.
+The pass statement in Python is a null operation—it does nothing when executed. It is used as a placeholder in situations where syntactically some code is required, but you do not want any command or code to execute.
+
