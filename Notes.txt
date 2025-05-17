@@ -240,3 +240,20 @@ Function: It is a block of code which takes some input and generate output.
 14. sum = it helps in iteration and give the final output.
 
 15. help = to know the original documentation.
+
+MODULE:
+It is a file containing set of functions which can be included in our application when necessary.
+example:
+math,random,os,time
+
+To access the number of functions in a module, type the module name dot(.) then tab.
+math = contains all the mathematical functions in it.
+random = this contains many functions in it. Most used functions are randint, shuffle.
+
+time = use to ctime(See time)
+give the time span i.e. no. of seconds from jan 1 to till now.
+
+time.sleep() = this will create a time gap of number of seconds you mention in sleep and print the nxt statements.
+
+os - getcwd (gets current working directory)
+listdir() - list the files in the directory. 

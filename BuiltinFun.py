@@ -40,3 +40,5 @@ print("length of string :",len("hello_World"))
 
 a = [4,5,6,7,8]
 print("summation of given list is:",sum(a))
+
+
