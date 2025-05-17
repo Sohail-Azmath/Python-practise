@@ -206,3 +206,37 @@ pass - It is generally used when you are not aware about the logic. So you use p
 Pass statement help us to avoid syntax error.
 The pass statement in Python is a null operation—it does nothing when executed. It is used as a placeholder in situations where syntactically some code is required, but you do not want any command or code to execute.
 
+Built-in Funciton:
+Function: It is a block of code which takes some input and generate output.
+1. print() - print function takes the input and gives the output.
+2. input() - takes the input from the user. This always accepts the input in the form of string functions we need to convert into other data types using type conversion.
+3. type() - this help us to find the data type of the input.
+
+4. Data type functions:
+    a.int()- convert into integer datatype
+    b.float() - convert into float datatype
+    c.list()
+    d.tuple()
+    e.string
+
+5. abs (absolute function) - this is modulus(use to convert negative values to the positive. In math -(-x) where x is the value given in abs function) function. Useful in machine learning.
+
+6. pow - use to calculate the exponential value of a number. pow(2,3) - 2 ^ 3 = 8
+
+7. min/max - use to find the min & max value.
+
+8. round - use to round off the number to the nearest number and this help us to choose the number of decimal values to be displayed.
+
+9. Divmod = it returns the tuple in two formats. (x//y, x%y) i.e.(integer divison, modulus)
+
+10. bin/oct/hex = this functions give us three type of values such as binary, octal, Hexadecimal.
+
+11. id = used to find the address of memory location.
+
+12. ord = it returns the ASCII value of a alphabet
+
+13. len = length of the given value.
+
+14. sum = it helps in iteration and give the final output.
+
+15. help = to know the original documentation.
