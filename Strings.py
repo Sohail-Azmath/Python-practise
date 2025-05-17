@@ -70,3 +70,34 @@ print("H" in c)
 print("Gidda" in c)
 print("Hello" not in c)
 
+print("String functions")
+
+s = "kolkata"
+print("Length of the string:",len(s))
+print("Maximum character in the string:",max(s))
+print("Minimum character in the string:",min(s))
+print("Sorted order of characters in the string:",sorted(s))
+print("Reversed order of characters in the string:",sorted(s, reverse = True))
+print("Capitalized string:", s.capitalize())
+tr = "Title of the project"
+print("Title of the project:", tr.title())
+print("Upper case of the string:", s.upper())
+print("Lower case of the string:", s.lower())
+print("Swapped case of the string:", s.swapcase())
+print("counting the frequency of a character:",s.count("k"))
+print("finding the character in the string:",s.find("k"))
+print("finding the character in the string:",s.index("k"))
+print("Hello, I'm {}. I'm {} years old.".format("Mohammed Sohail Azmath", 20))
+print("Hello, I'm {1}. I'm {0} years old.".format("Mohammed Sohail Azmath", 20))
+print("Hello, I'm {name}. I'm {age} years old.".format(name="Mohammed Sohail Azmath", age =20))
+print("Hello, I'm {name}. I'm {weight} years old.".format(name="Mohammed Sohail Azmath", weight=65, age = 20))
+
+C = "FLAT20"
+print("check for alphabet and numeric:", c.isalnum())
+d = "FLAT"
+print("check for alphabet:", d.isalpha())
+e = "450"
+print("check for digit:", e.isdigit())
+g = "Hello_world"
+print("check for float:", g.isidentifier())
+

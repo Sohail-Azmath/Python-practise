@@ -337,3 +337,53 @@ Loops in string: We can apply sequencing and iteration on strings.
 c = "Hello-world"
 for i in c[::]:
     print(i)
+print("H" in c)
+print("Gidda" in c)
+print("Hello" not in c)
+
+String Functions:
+1. Common Functions - applicable for list, set, tuple, dictionaries.
+2. Specific Functions - these cannot be applied on list, tuples, dictionary, sets.
+
+1.Common Functions:
+a. len
+b. max - Min & Max function in strings work on ASCII values.
+c. min
+d. sorted - sort the character based on ascending order and gives output in the form of list. To print the string in reverse order we give reverse parameter as True in sorted function.
+
+2. Specific functions:
+a. Capitalize/Title/Upper/Lower/Swapcase:
+capitalize: this is used to convert the first letter of a word to capital.
+b. Title: This capitalize the every first character of a word.
+c. Upper: This converts the every character into upper case.
+d. Lower: This converts the every character into lower case.
+e. swapcase: converts the upper into lower and viceversa.
+f. count: use to find the frequency of a sub string.
+g. find: use to find the index of the character in a string.
+h. index: use to find the location or index value of a substring.
+
+The major difference between find and index is find function return -1 incase if the substring is not found.
+index throws an error when the substring is not found.
+
+i.endswith /startswith:
+Both are use to check the  start or end of string using the given substring. This returns the bool value in presence or absence of substring.
+
+j.format:
+This is used when you are not aware about the input value. We provide empty spaces with braces to fill the gap in the braces.
+Usecase: This is generally seen when we print the user name during login page.
+
+syntax: Statements{} statement.format(values..)
+
+Curly braces {} are the syntax Python uses to mark where values should be inserted in the string when using .format(). They act as "slots" for the values.
+
+If we have no. of values in the format function. We can use the index of each value in the curly braces which will be identically replaced with the index values.
+Indexing in format value starts from '0'.
+we can assign varibales for the values in the format and use the same variables in the curly braces..
+Note: It's not mandatory that we must use all the values present in the format function. 
+
+6. isalnum/isalpha/isdecimal/isdigit/isidentifier:
+These are the validation functions in python.
+isalnum = either the string contains alphabets or numbers.
+isalpha = it is used to validate the string contains alphabets.
+isdecimal = it is used to validate the given integer is decimal.
+isdigit = it is used to validate the given string is a integer.
