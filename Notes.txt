@@ -257,3 +257,83 @@ time.sleep() = this will create a time gap of number of seconds you mention in s
 
 os - getcwd (gets current working directory)
 listdir() - list the files in the directory. 
+
+STRINGS:
+In all application programming language you will get string as data type. In all the application based programming language we wil use strings to interact with users.
+In system software programming language like c does not have string as data type as it is used to interact with the hardware not with users.
+
+In python specifically, strings are a sequence of unicode characters.
+ASCII can only represent 128 characters (or 256 in extended ASCII),which covers basic English letters, digits, and a few symbols.
+
+Unicode can represent all characters from all languages(like Hindi, Chinese, Arabic, Russian, etc.), as well as emojis, math symbols, and more—over 140,000 characters.
+
+Unicode is needed for global communication, supporting all languages and symbols, while ASCII is only suitable for basic English text. Unicode makes modern software and the internet truly international.
+
+1. Creating strings
+2. Accessing Strings
+3. Adding chars to strings
+4. Editing Strings
+5. Deleting Strings
+6. Operations on Strings
+7. String Functions
+
+1. Creating Strings:
+We can create strings using single, Double and multiple inverted commas.
+""" - used to create a multi line strings.
+
+2. Accessing strings:
+Indexing & slicing - used to access string characters from the string.
+Indexing is used to obtain a character at that index. 
+Types of indexing:
+1. Positive Indexing:- First character index value is 0 and eventually it increases till end. Index position moves from left to right.
+2. Negative indexing:- We move from right to left. Generally this is used when we are unaware about the length of the string. Last character in a string can be accessed using negative indexing.
+
+slicing: We can access no. of characters in one go. 
+Syntax: Start(Starting index) : end(Ending Index)
+Here the end index is not considered. We get till the end - 1 characters.
+In negative indexing last index is not allowed.
+We can use step parameter in the string.
+Step cannot be negative when we are working with positive indexing.
+[::-1] - use to reverse a string. '::' each colon indicates the start and end index to be accessed. As mention ':' it start from 0 index and get till last. we use -1 as step which help us to reverse string.
+
+Editing & Deleting:
+1. Editing
+we cannot edit the single character in a string. It is immutable(it cannot be changed) data type.
+We can completely re-assign to the string varible but cannot be edited and we cannot add new characters to the existing string.
+2. Deletion:
+we have a keyword del to remove the string stored in the variable. 
+Note: Here the stored string is not getting deleted. Instead a whole variable is getting deleted. Strings cannot be deleted or edited as they are immutable.
+
+Operations on string:
+1. Arithmetic Operations
+2. Relational Operations
+3. Logical Operations
+4. Loops on strings
+5. Membership Operations (in, not in)
+
+Arithmetic Operations:
++ In strings we use + operator to concatinate.
+* We use this to multiply the string.
+
+/ - These operators cannot be used in string operations.
+
+Relational operators: == != can be use to compare strings.
+
+> < :- used for string comparisions.
+String comparision takes place based on Lexographical order.
+In english Alphabets capital Letters come first and the small letters next.
+
+Logical Operator: 
+python consideration:
+""(Empty strings) -> False
+"Absh" (Non empty strings)-> True
+useful for Logical operators.
+
+"and" returns the first falsy value or the last value if all are truthy.
+"or" returns the first truthy value.
+Non-empty strings are truthy; empty strings are falsy.
+
+Loops in string: We can apply sequencing and iteration on strings.
+c = "Hello-world"
+for i in c[::]:
+    print(i)
