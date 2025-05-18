@@ -387,3 +387,19 @@ isalnum = either the string contains alphabets or numbers.
 isalpha = it is used to validate the string contains alphabets.
 isdecimal = it is used to validate the given integer is decimal.
 isdigit = it is used to validate the given string is a integer.
+isidentifier = It look for identifiers in the string.
+
+7. split:
+This is used to split the string. It convert string into list.
+
+We can perform split operation based on different words. We can perform split based on space or any other word.
+
+8. join:
+This is used to join the list of words into a string.
+
+9. replace:
+This is use to replace a word in a string.
+Here we specify both the words i.e. the word which need to replaced and the word we need to add.
+
+10. strip:
+It removes the trailing adn leaning spaces.

@@ -101,3 +101,16 @@ print("check for digit:", e.isdigit())
 g = "Hello_world"
 print("check for float:", g.isidentifier())
 
+str = "This is python tutorial for beginners"
+print("Working with split function",str.split())
+print("Working with split function",str.split("python"))
+
+j = " ".join(['This', 'is', 'python', 'tutorial', 'for', 'beginners'])
+print("Working with join function:",j)
+
+print("replacing the word in a string:",str.replace("python","C++"))
+
+a = "          python        "        
+print("Working with strip function which help us to avoid trailing and leaning spaces:\n",a.strip())
+
+help(str.strip)
