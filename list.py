@@ -62,3 +62,19 @@ b.pop()
 print("Deleting the last element in the list:",b)
 b.clear()
 print("Deleting all the elements in the list:",b) #this gives an empty list.
+
+# concatenation of list
+print("Concatenation of list:", a+d)
+
+print("Multiplication of list:", a*2)
+for i in a:
+    print(i)
+
+# Functions in list
+print("Length of the list:", len(a))
+print("Maximum element in the list:", max(a))
+print("Minimum element in the list:", min(a))
+print("Sorted in list:", sorted(a))
+print("Finding the index of the element in the list:", a.index(3))
+a.sort()
+print("sort this is the permanent operation:",a)

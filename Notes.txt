@@ -464,3 +464,17 @@ del - we can delete the complete list or an element from the list using del keyw
 remove - we can remove the element from the list by directly specifying it.
 pop - delete the last element from the list.
 clear - it does not delete the list instead it will clear all the elements present in the list i.e. it makes list empty with no elements.
+
+Operations in list:
+concatination: We can join both the lists.
+Multipliy: We can multiply the list.
+l1 * 3 will result in list elements will be appeared for 3 times.
+we can use list as sequence in for loop.
+
+Funcitons in list:
+1. len
+2. min
+3. max
+4. sorted - this is not the permanent operation.
+5. sort  - This is permanent operation.
+6. index - this is used to find the index of a number.
