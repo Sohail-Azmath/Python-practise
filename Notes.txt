@@ -467,7 +467,7 @@ clear - it does not delete the list instead it will clear all the elements prese
 
 Operations in list:
 concatination: We can join both the lists.
-Multipliy: We can multiply the list.
+Multiply: We can multiply the list.
 l1 * 3 will result in list elements will be appeared for 3 times.
 we can use list as sequence in for loop.
 
@@ -526,3 +526,109 @@ len, min, max, sum, sorted,
 sorted(<listname>, reverse = True) - this will give you a reverse tuple.
 
 Tuples are read-only data types. This help us to protect the integrity of the data. 
+
+Sets:
+Rules in sets:
+1. Sets does not allow duplicates
+2. Sets have no indexing/slicing
+3. Sets don't allow mutable data types.
+4. Set itself is a mutable data type.
+
+NOTE: Set inside set is not allowed. Therefore, 2D & 3D sets are not possible.
+
+1. create
+2. Access
+3. Edit
+4. Add
+5. Delete
+6. Operations
+7. Functions
+
+1. Create:
+Whenever we try to create a empty set and assign curly braces. We think set is created but when we check it using type function. We get it's type as dictionary. 
+NOTE: In Python curly braces{} are used for dictionaries.
+To create a empty set we use set() function.
+homogenous & Heterogenous sets are possible.
+
+Sets does not follow indexing. It follows hashing.
+ex:-
+s = {"hello", 1, 2, 3,4}
+print("Heterogenous sets:",s)
+output: {1, 2, 3, 4, 'hello'}
+
+sets allow tuples as there element but not list.
+
+Reason: 
+Sets in Python can only contain immutable (unchangeable) objects as their elements. This is because sets use hashing to store elements, and only immutable objects can have a fixed hash value.
+Tuples are immutable.
+Using tuple in set: {4, 5, (1, 2, 3, 3), 6}
+
+Lists are mutable.
+  print("Using list in set:",{[1,2,3,4], 5,6,7})
+                               ^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+
+Trying to create a multi dimensional set.
+s = {{1},{2},4,5}
+print("2D set:",s)
+
+ s = {{1},{2},4,5}
+        ^^^^^^^^^^^^^
+TypeError: unhashable type: 'set'
+
+2. Accessing:
+Set doesnot support positive/negative indexing & silicing.
+
+print("Accessing element through positive indexing:",s2[0])
+# print("Accessing element through negative indexing:", s2[-1])
+# print("Accessing element through slicing:",s2[0:3])
+
+output: 
+TypeError: 'set' object is not subscriptable
+
+3. Editing: It is considered when the memory location is same.
+Editing is not possible in sets. 
+
+NOTE: There is a possibilty that we convert the set into list and then edit the element then add back to the set. This is not considered as editing becoz the address changes.
+
+4. Add:
+We can add elements in the set using add method.
+
+5. Delete:
+This can be performed using three keywords: del, remove, pop
+del - it can remove complete set but we cannot remove single element using it's index.
+remove - we can remove the element from the set by specifing the value in remove function.
+pop - this will delete the last element based on hashing. 
+NOTE: In all other data types it deletes the last element but when it comes to set it delete the elements based on hashing.
+
+Set operations:
+No concatination.
+No multiplication.
+Loop & Membership operator(in, not in) can be applied for set.
+
+Funcitons: len, min, max, sum, sorted.
+
+min & max - used only when the set is homogenous set.
+sorted(<set name>, reverse = True) - use to print the set in reverse order.
+
+We can perform all set operations on set.
+Union - we can perform union operation on sets where the final set contains only unique integers. 
+syntax: <set1 varibale> Union(<set2 varibale>)
+
+
+Intersection - we can get the common elements of two sets.
+syntax: <set1 varibale> Intersection(<set2 vairable>)
+
+Difference - use to find the unique elements which are not in one set. [The items which are present in set1 but are NOT present in set2]
+syntax: <set1 variable> Difference(<set2 varibale>)
+
+Symmetric Difference - These are the elements which are not common in both the sets. [Here the elements of both the sets are present except the common elements from both the sets].
+
+Disjoint - When we do not have any common elements between the two sets.
+Note: We use isdisjoint method.
+
+subset - a set whose all elements are also present in another set.
+Note: We use issubset method.
+
+superset - a set that contains all the elements of another set.
+Note: We use issuperset method.
