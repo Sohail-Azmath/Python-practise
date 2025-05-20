@@ -478,3 +478,51 @@ Funcitons in list:
 4. sorted - this is not the permanent operation.
 5. sort  - This is permanent operation.
 6. index - this is used to find the index of a number.
+
+Tuples:
+1. create
+2. Access
+3. Edit
+4. Add
+5. Delete
+6. Operations
+7. Functions
+
+1. Creating Tuples:
+Tuples are created using round braces.
+homogenous Tuples: The tuple in which all the data types are same.
+Heterogenous tuples: The tuple in which all the data types are not same.
+we can create a 2D tuple.
+NOTE: when we want to create a tuple of single element we need to write comma after writing the element. This make that variable tuple. If not it display the data type of the variable declared.
+
+We use tuple by using type conversion.
+We can convert string & list into tuple.
+
+2. Access elements:
+Everything is similar to list.
+we can use indexing & silicing to access the elements from the tuple.
+In 2D tuples we can use 2D indexing to access the element.
+
+3. Editing:
+Tuples are immutable(Once created cannot be changed)
+NOTE: The major difference between list & tuple is tuples as like strings are immutable.
+
+    t[0]= 100
+    ~^^^
+TypeError: 'tuple' object does not support item assignment 
+
+4. Add: We cannot add new items to the tuple.
+NOTE: TUPLES ARE IMMUTABLE.
+
+5. Delelting:
+we can delete the complete tuple but single element cannot be deleted from the tuple.
+NOTE: TUPLES ARE IMMUTABLE.
+
+6. Operations: similar to list.
+ concatinate, Multiply, loop
+
+7. Funcitons:
+len, min, max, sum, sorted, 
+sorted(<listname>, reverse = True) - this will give you a reverse tuple.
+
+Tuples are read-only data types. This help us to protect the integrity of the data. 
