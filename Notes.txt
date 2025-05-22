@@ -632,3 +632,60 @@ Note: We use issubset method.
 
 superset - a set that contains all the elements of another set.
 Note: We use issuperset method.
+
+DICTIONARY:
+Rules of Dictionary:
+1. Dictionary has no indexing
+2. Dictionary is a mutable types.
+3. Keys -> Immutable, Values -> mutable
+4. Keys should be unique.
+
+Mutable Data structures are - List/Sets/Dictionary
+Immutable Data structures are - Strings/Tuples/int/float/boolean/complex
+
+We can create a 2D dictionary.
+
+1. Create.
+2. Access
+
+Accessing values from the dictionary is done using keys. We do not have slicing, positive & negative indexing.
+
+3. Edit
+we can edit the value using the key in the dictionary. The same can be done with 2D.
+we can access the element from the get function in a dictionary but We cannot access the values using get function in 2D dictionaries. 
+
+print("Editing the values of a dictionary using key:", d["Name"] = "Famous")
+SyntaxError: expression cannot contain assignment, perhaps you meant "=="?
+we cannot use an assignment (=) inside a function call like print(). Assignment statements do not return a value and cannot be used as expressions.
+
+4. Add
+Whenever we want to add something to the dictionary we must use key-value format to add into the dictionary.
+
+5. Delete
+We can use Del keyword to delete the element & complete dictionary. We can use clear function to empty the dictionary.
+
+Operations:
+Concatination, Multiply operations cannot be performed in dictionary.
+Loops can be used to extract the elements in the dictionary.
+By default it always extract keys. we can extract the values from the dictionary by giving it access.
+
+for i in d:
+    print(i)
+
+This will print only keys in the dictionary.
+To print the values in the dictionary we define it as:
+
+for i in d:
+    print(i,d[i])
+
+Membership Operators: in, not in
+These only work on keys in the dictionary.
+
+len, min, max, sorted, sorted(reverse = True)
+
+min(d) returns the smallest key (in lexicographical order if keys are strings).
+max(d) returns the largest key.
+If your dictionary keys are of different, non-comparable types (e.g., both strings and integers), min(d) or max(d) will raise a TypeError.
+
+d.key() - this gives the keys in the dictionary.
+d.values() - this gives the values in the dictionary.
