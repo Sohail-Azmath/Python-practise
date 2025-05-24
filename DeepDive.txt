@@ -1,0 +1,94 @@
+
+ROM (Read-Only Memory): Stores program code and data permanently, even when the device is off. Before a program runs, its code is stored in ROM.
+
+RAM (Random Access Memory): Temporary, volatile memory used to store variables and data while a program is running. When you declare a variable, it is stored in RAM. All data in RAM is lost when the device is turned off or restarted.
+
+Registers: Small, fast storage locations within the CPU, made up of flip-flops. Registers temporarily hold data and instructions currently being used by the CPU.
+
+Flip-Flops: Basic digital memory circuits made from logic gates, used to build registers.
+
+Binary Format: All variables in memory are stored as binary values (0s and 1s).
+
+Hexadecimal Format: Memory addresses are often represented in hexadecimal, with 0x indicating a hexadecimal value.
+Example:
+If a program crashes and you close it, the data in RAM is cleared, allowing you to restart the program with a clean state.
+
+
+Note:
+
+Registers are not the same as RAM; they are much smaller and faster, located inside the CPU.
+
+ROM is not used for variable storage during program execution; it stores firmware or permanent instructions.
+
+The explanation about registers having two columns is a simplification; registers store binary values, and their addresses may be shown in hexadecimal for convenience.
+
+In Python, variables are references to objects in memory. When you assign a value to a variable, the variable points to (references) the object storing that value.
+This is known as object reference or call by object reference (sometimes called "call by assignment" or "call by sharing").
+When you use the variable, you are accessing the object it references.
+
+In Python, variables store references to objects, and accessing a variable means accessing the object it refers to. This is often described as "call by object reference.
+
+Aliasing:
+It refers to the situation where two or more variables refer to the same object in memory.
+
+Aliasing occurs when you assign one variable to another without creating a copy.
+Both variables reference the same memory location.
+Deleting one variable does not delete the object if another alias still exists.
+
+a = 6
+b = a 
+This concept is called Aliasing. We have created a two references for a single memory location. When we delete one varibale or reference still we have one more reference left which is pointing to same memory location.
+
+Reference counting:
+The number of varibles pointing to the memory location is called Reference pointing.
+We have a function "getrefcount" in Sys module in py to get the count of variables pointing to the memory location.
+We get the count +1
+As the getrefcount function is also pointing towards that memory location.
+
+Garbage collection:
+a = 6
+b = a 
+c = b 
+We have done aliasing and when we delete 3 variables the references get deleted but yet the value 6 remains in the memory. This is occupying space and useless. To free such memory locations py doesnot provide any specific concept as pointers in c to free up the memory. Yet we have a in built program called Garbage Collector which look for such memeory locations and free up space.
+
+Weird Behaviour:
+1. getrefcount anamoly
+2. -5 to 256 
+3. strings
+
+-5 to 256 - whenever we declare two varibales with same number in the above range. We get the id of two numbers as same. But when we cross the range we find id of two variables differ. [id = Memory location/addresses]. This is called as software optimization for fast execution.
+
+when we create a strings in python until they are valid identifiers there memeory location is same.
+
+a = "Basic"
+b = "Basic" 
+both a and b memory location will be same.
+
+a = "Basic stuff"
+b = "Basic stuff"
+both a and b memeory locations vary.
+
+a = "Basic_stuff"
+b = "Basic_stuff"
+both a and b memory locations vary.
+
+Mutability: It refers to the ability to change or edit data in the memory location.
+
+Mutable datasets such as list, dictionary, sets are edited/changed references point to the same memory location. When the same is done with immutable datasets a new memory location is created and the values are stored with changes and the references point to the new memeory location. 
+
+Note: We cannot append the immutable datasets.
+
+The above theory is suitable for ex:
+
+Tuple is a immutable dataset.
+a=(1,2,3)
+a = a+(4,5)
+
+Under new memory location a = (1,2,3,4,5)
+
+To avoid conflicts with mutability when you are working in team, we use cloning concept.
+
+We do not directly assign the ref to other one but we create a copy of the reference.
+a = [1,2,3]
+b = a[:]
+b is a copy of a. when we append b changes are only seen in b. a is safeguarded.We may not find this when we directly assign b = a.
