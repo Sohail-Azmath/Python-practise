@@ -689,3 +689,52 @@ If your dictionary keys are of different, non-comparable types (e.g., both strin
 
 d.key() - this gives the keys in the dictionary.
 d.values() - this gives the values in the dictionary.
+
+
+********************************************
+
+Functions:
+It is a block of code which take some input and give a output.
+It is a black box tool.
+
+1. Abstraction:
+we are unaware about the back ground work. We focus on the output we get.
+2. Decomposition:
+
+Component of a function:
+1. def keyword
+2. Function name(Identifier)
+3. arguments
+4. colon
+5. docstring
+6. function body - core logic
+7. return statement
+8. function call 
+
+NOTE: In py we define the function first, we make a function call to execute the block of code.
+
+we use def keyword while defining a function.
+Function name must be identifier.
+We can pass arguments in the function.
+
+We can define the docstring which tells us about the function, the inputs required and the value function will return.
+
+function body - core logic of the function.
+
+return statement returns the value after executing the block of code.
+
+Function call - it provokes the function to execute the block of code.
+We can print the docstring of a function using <function name>.__doc__ 
+
+we can import functions of a file as modules and use them in our program.
+By default the functions always return "None"
+
+Function in Memory:
+When a function is defined using the def keyword, Python creates a function object and stores it in the global frame (memory). 
+
+The code inside the function does not execute at this point. When the function is called, Python creates a new local frame for that function call, executes the function’s code, and, if there is a return statement, returns the value to the caller. 
+
+After the function finishes executing, the local frame is destroyed and control returns to the global frame.
+
+By default, if a function does not have a return statement, it returns None. 
+Functions from other files can be imported and used as modules in your program.
