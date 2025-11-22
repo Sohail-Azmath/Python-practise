@@ -17,8 +17,8 @@ print(_)
 # SyntaxError: invalid syntax
 
 # Input function
-first = int(input("Enter your place:"))
-second = int (input("Enter your name:"))
+first = input("Enter your place:")
+second = input("Enter your name:")
 print(first)
 print(second)
 print(first + second)

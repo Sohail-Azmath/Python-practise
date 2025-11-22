@@ -60,9 +60,9 @@ b. float
 c. complex
 
 0b1010 #Binary "0b" represent Binary notation
-100 #Decimal
-0o310 #Octal "0o" represent Octal notation
-0x12C #Hexadecimal "0x" represent Hexadecimal notation
+100    #Decimal
+0o310  #Octal "0o" represent Octal notation
+0x12C  #Hexadecimal "0x" represent Hexadecimal notation
 
 Scientific notation = 1.5e2 "e2" represent exponent i.e. 1.5 * 10^2
 Scientific notation = 1.5e-2 "e-2" represent exponent i.e. 1.5 * 10^-2
