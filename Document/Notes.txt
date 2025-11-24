@@ -1,3 +1,21 @@
+print function:
+The print function in Python is a built-in function that outputs text or other data to the console.
+
+we can pass multiple arguments, and it will print them separated by spaces.
+print("Hello", "World", 123)
+
+You can also customize the separator and end character:
+print("A", "B", "C", sep="-", end="!\n")
+
+Function Signature:
+print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+
+*objects: One or more objects to print.
+sep: Separator between objects (default is a space).
+end: What to print at the end (default is newline).
+file: Where to print (default is standard output).
+flush: Whether to forcibly flush the stream.
+
 Dynamic Typing:
 We need NOT to specify the data type. Unlike the other languages where we specifically mention the data type for a variable.
 
@@ -114,7 +132,7 @@ NOT = It shows the opposite of the current value.
 |(BITWISE OR) = It returns 1 when atleast one value is 1.
 >>(LEFT SHIFT) = shift bits to left by the given value
 <<(RIGHT SHIFT) = shift bits to right by the given value.
-^(XOR) = It compares each bit of two numbers and return 1 if the bits are different. 0 is bits are same. 
+^(XOR) = It compares each bit of two numbers and return 1 if the bits are different. 0 if bits are same. 
 ~(COMPLIMENT)= turns 0 to 1 and Viceversa
 
 5.Assignment operator: =
@@ -146,7 +164,7 @@ Branching: this is the phenomena where we have two directions to move ahead.
 For instance:
 In login page if the credentials are correct give the profile/home page. If not throw a error which states incrt credentials.
 We do not have any brackets for if - else.
-If BRANCHING increases includes no. of branches we need to use else if.
+If BRANCHING increases it includes no. of branches. we need to use else if.
 
 Note: In python we write "elif" where as in other languages it is written as "else if".
 
@@ -160,7 +178,7 @@ Best example to understand loops concepts real world usage is:
 E - commarce platform(FlipKart)
 Zomato (Food Delivery App) etc.
 
-All this display the content in same structure the only change is the content present in it. To display n no. of products we use loops and we fetch the data from database to change the content.
+All this display the content in same structure the only change is the content present in it. To display 'N' no. of products we use loops and we fetch the data from database to change the content.
 
 Types of loops:
 1. while
@@ -186,7 +204,7 @@ we have a Sequence of characters, strings, list, tuple & Dictionaries.
 For loop iterate on Sequence or range function.
 we need not to specify the increment operator or termination condition. We use range function or sequence to end the for loop. 
 
-Tip: When you are unaware about the no. of iterations then use while loop and when you have an clear understanding or no. of iterations use for loop.
+Tip: When you are unaware about the no. of iterations then use while loop and when you have an clear understanding of no. of iterations use for loop.
 
 Nested loop:
 Loops are placed inside the other loops.
@@ -208,8 +226,8 @@ The pass statement in Python is a null operation—it does nothing when executed
 
 Built-in Funciton:
 Function: It is a block of code which takes some input and generate output.
-1. print() - print function takes the input and gives the output.
-2. input() - takes the input from the user. This always accepts the input in the form of string functions we need to convert into other data types using type conversion.
+1. print() - print function displays the specified message or value to the console (gives the standard output).
+2. input() - takes the input from the user. This always accepts the input in the form of string. If we need other data type we need to convert into other data types using type conversion.
 3. type() - this help us to find the data type of the input.
 
 4. Data type functions:
@@ -217,7 +235,7 @@ Function: It is a block of code which takes some input and generate output.
     b.float() - convert into float datatype
     c.list()
     d.tuple()
-    e.string
+    e.string - str()
 
 5. abs (absolute function) - this is modulus(use to convert negative values to the positive. In math -(-x) where x is the value given in abs function) function. Useful in machine learning.
 
@@ -259,7 +277,7 @@ os - getcwd (gets current working directory)
 listdir() - list the files in the directory. 
 
 STRINGS:
-In all application programming language you will get string as data type. In all the application based programming language we wil use strings to interact with users.
+In all application programming language you will get string as data type. In all the application based programming language we will use strings to interact with users.
 In system software programming language like c does not have string as data type as it is used to interact with the hardware not with users.
 
 In python specifically, strings are a sequence of unicode characters.
