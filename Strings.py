@@ -92,6 +92,7 @@ print("Hello, I'm {1}. I'm {0} years old.".format("Mohammed Sohail Azmath", 20))
 print("Hello, I'm {name}. I'm {age} years old.".format(name="Mohammed Sohail Azmath", age =20))
 print("Hello, I'm {name}. I'm {weight} years old.".format(name="Mohammed Sohail Azmath", weight=65, age = 20))
 
+print("Validation function")
 C = "FLAT20"
 print("check for alphabet and numeric:", c.isalnum())
 d = "FLAT"

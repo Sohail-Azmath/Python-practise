@@ -420,7 +420,7 @@ This is use to replace a word in a string.
 Here we specify both the words i.e. the word which need to replaced and the word we need to add.
 
 10. strip:
-It removes the trailing adn leaning spaces.
+It removes the trailing and leaning spaces.
 
 List & it's Operations:
 1. What is list
@@ -446,7 +446,7 @@ l = [1,2,3,4] - homogenous list
 l = [name, 8, 0.9, 6+9j] - Heterogenous list
 
 We can create a multi dimensional list:-
-2D list - [1,,3,3,[4,5],[8,9],[10,7]]
+2D list - [1,3,3,[4,5],[8,9],[10,7]]
 3D list - [2,3,4,[[8,9],[0,3]],5,6,7,[[7,6],[4,3]]]
 
 we can perform type conversion using list.
@@ -523,7 +523,7 @@ In 2D tuples we can use 2D indexing to access the element.
 
 3. Editing:
 Tuples are immutable(Once created cannot be changed)
-NOTE: The major difference between list & tuple is tuples as like strings are immutable.
+NOTE: The major difference between list & tuple is tuple's are like strings(immutable).
 
     t[0]= 100
     ~^^^
@@ -631,16 +631,17 @@ sorted(<set name>, reverse = True) - use to print the set in reverse order.
 
 We can perform all set operations on set.
 Union - we can perform union operation on sets where the final set contains only unique integers. 
-syntax: <set1 varibale> Union(<set2 varibale>)
+syntax: <set1 varibale>.Union(<set2 varibale>)
 
 
 Intersection - we can get the common elements of two sets.
-syntax: <set1 varibale> Intersection(<set2 vairable>)
+syntax: <set1 varibale>.Intersection(<set2 vairable>)
 
 Difference - use to find the unique elements which are not in one set. [The items which are present in set1 but are NOT present in set2]
-syntax: <set1 variable> Difference(<set2 varibale>)
+syntax: <set1 variable>.Difference(<set2 varibale>)
 
 Symmetric Difference - These are the elements which are not common in both the sets. [Here the elements of both the sets are present except the common elements from both the sets].
+syntax: <set1 variable>.symmetric_difference(set2 variable)
 
 Disjoint - When we do not have any common elements between the two sets.
 Note: We use isdisjoint method.
@@ -654,7 +655,7 @@ Note: We use issuperset method.
 DICTIONARY:
 Rules of Dictionary:
 1. Dictionary has no indexing
-2. Dictionary is a mutable types.
+2. Dictionary is a mutable data type.
 3. Keys -> Immutable, Values -> mutable
 4. Keys should be unique.
 
