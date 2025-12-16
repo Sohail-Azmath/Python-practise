@@ -24,15 +24,15 @@ The explanation about registers having two columns is a simplification; register
 
 In Python, variables are references to objects in memory. When you assign a value to a variable, the variable points to (references) the object storing that value.
 This is known as object reference or call by object reference (sometimes called "call by assignment" or "call by sharing").
-When you use the variable, you are accessing the object it references.
+When you use the variable, you are accessing the object references.
 
-In Python, variables store references to objects, and accessing a variable means accessing the object it refers to. This is often described as "call by object reference.
+In Python, variables store references to objects, and accessing a variable means accessing the object it refers to. This is often described as "call by object reference".
 
 Aliasing:
 It refers to the situation where two or more variables refer to the same object in memory.
 
 Aliasing occurs when you assign one variable to another without creating a copy.
-Both variables reference the same memory location.
+Both variables act as reference to the same memory location.
 Deleting one variable does not delete the object if another alias still exists.
 
 a = 6
@@ -58,7 +58,7 @@ Weird Behaviour:
 
 -5 to 256 - whenever we declare two varibales with same number in the above range. We get the id of two numbers as same. But when we cross the range we find id of two variables differ. [id = Memory location/addresses]. This is called as software optimization for fast execution.
 
-when we create a strings in python until they are valid identifiers there memeory location is same.
+when we create a strings in python until they are valid identifiers their memeory location is same.
 
 a = "Basic"
 b = "Basic" 
@@ -70,7 +70,7 @@ both a and b memeory locations vary.
 
 a = "Basic_stuff"
 b = "Basic_stuff"
-both a and b memory locations vary.
+both a and b memory locations are same.
 
 Mutability: It refers to the ability to change or edit data in the memory location.
 

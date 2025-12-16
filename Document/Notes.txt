@@ -737,6 +737,8 @@ Function name must be identifier.
 We can pass arguments in the function.
 
 We can define the docstring which tells us about the function, the inputs required and the value function will return.
+To know the documentation of a function you can use:
+<function name>.__doc__
 
 function body - core logic of the function.
 
@@ -747,6 +749,7 @@ We can print the docstring of a function using <function name>.__doc__
 
 we can import functions of a file as modules and use them in our program.
 By default the functions always return "None"
+We can use pythontutor.com to visualize the execution of python code. 
 
 Function in Memory:
 When a function is defined using the def keyword, Python creates a function object and stores it in the global frame (memory). 
@@ -757,3 +760,78 @@ After the function finishes executing, the local frame is destroyed and control 
 
 By default, if a function does not have a return statement, it returns None. 
 Functions from other files can be imported and used as modules in your program.
+
+
+Parameters Vs Arguments:
+1. Defualt Arguments
+2. Positional Arguments
+3. Keyword Arguments
+4. Arbitrary Arguments
+
+Function expect some value to be given. This is called as parameter. This is generally seen during the function defination. Ex: def is_evn(number) -> Here number acts as a parameter. 
+
+When we pass some value to the function to use that function code. This is called as arguments. Ex:- is_even(4) -> Here 4 is argument.
+
+1. Defualt Arguments: These are useful when the user miss to pass the values to the given function. 
+we declare defualt values to the parameters in the funciton. 
+Ex: def power(a=1, b=1):
+        return a**b
+
+    power(2,3)
+    power(2)
+    power()
+
+All the 3 statements gets executed without throwing any error. 
+
+2. Positional Arguments:
+This preperty ensures that parameters reach to the exact parameter of the function without getting interchanged. 
+ Ex: power(2,3)
+ In the above example we have seen that 2 is taken by the 'a' parameter and 3 is taken by the 'b' parameter. This property is called as positional Argument property.
+
+
+3. Keyword Argument:
+This is used to explicitly over ride the positional Argument. Here the user explicitly define the value of argument. The user is aware about the arguments but not the position of arguments. This is generally used when you are not aware about the position of the arguments. 
+
+Ex: power(b = 2, a = 3)
+Though you have passing the 'b' value in the power function. This will not assign the 'a' value as 2 (according to the positional argument). 
+As we have mentioned it in the explicitly the value of 'b' remains as 2.  
+priority order:- Key word Argument >> Positional Argument. 
+
+4. Arbitrary Argument:
+
+We have some functions which can accept many no. of arguments. This can accept fexible number of arguments. 
+Ex: print function. 
+
+Global & Local Variables:-
+
+Global variable: The variable which is not under any sub function. It is under the main function and can be utilized by different functions in the program.
+
+When the function doesnot have a local variable it uses the value of global variable. 
+
+Local Variable: This is the variable which is created inside the function and is destroyed after the function gets end. 
+
+The sub function can use the global variable but the value of global variable cannot be changed inside these functions. 
+
+Note: We can use 'global' keyword to change the value of Global Variable. 
+Ex: 1
+def g(y):
+    print(x)
+    print(x+1)
+
+x = 5 #x acts as a global variable
+g(x)
+print(x)
+Here in the above program uses global varibale x in the function g(y).
+
+Ex: 2
+Changing the value of global variable is not allowed. As it is a Global variable it will be utilized by different functions in a program. If the value of global varibale would change this could effect the other functions in the program. 
+
+def h(y):
+    x+=1 
+
+x = 5 #Global variable
+h(x)
+print(x)
+In the above program x is a global variable. We are trying to change the global variable using a function(which is not possible). Therefore, the x value remains same and we get the output as 5. 
+
+def(x)
