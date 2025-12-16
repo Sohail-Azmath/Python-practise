@@ -813,6 +813,7 @@ Local Variable: This is the variable which is created inside the function and is
 The sub function can use the global variable but the value of global variable cannot be changed inside these functions. 
 
 Note: We can use 'global' keyword to change the value of Global Variable. 
+
 Ex: 1
 def g(y):
     print(x)
@@ -834,4 +835,32 @@ h(x)
 print(x)
 In the above program x is a global variable. We are trying to change the global variable using a function(which is not possible). Therefore, the x value remains same and we get the output as 5. 
 
-def(x)
+Ex: 3
+we can change the value of the global variable using the "global" keyword in the sub function.
+syntax: global <varible>
+
+Though we have a python function using global keyword to change the value of the global keyword is not preferable. 
+
+def h(y):
+    global x 
+    x+=1
+x=5
+h(x)
+print(x)
+
+Ex: 4
+def f(x):
+    x = x + 1
+    print('in f(x): x =',x)
+    return x 
+
+x = 3
+z = f(x)
+print('in main program scope: z =',z)
+print('in main program scope: x =',x)
+
+o/p:
+in f(x): x = 4
+in main program scope: z = 4
+in main program scope: x = 3
+
