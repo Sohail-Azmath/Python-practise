@@ -864,3 +864,80 @@ in f(x): x = 4
 in main program scope: z = 4
 in main program scope: x = 3
 
+Nested function:
+A function inside a function. 
+Example:
+
+def f():
+    print("Inside f")
+    def g():
+        print("Inside g")
+    g()
+
+f()
+g()
+
+Output:
+Traceback (most recent call last):
+  File "E:\vs_code\Practise python\nested.py", line 8, in <module>
+    g()
+    ^
+NameError: name 'g' is not defined
+
+When we directly try to call the sub function it throws an error. It is not recognized or can be called directly from outside the main function.
+Nested function is hidden from the main function. 
+
+Example for other instance: 
+def f():
+    print("inside f")
+    def g():
+        print("inside g")
+        f()
+    g()
+
+f()
+
+The above code performs infinite iterations. As we call the f() inside the g(). This loop continues.
+We see the code gets crashed afer a certain number of iterations. As python has specified limit for the function calls. Once the number of function calls gets crossed. The code gets crashed. 
+
+Examples to understand the nested function:
+
+Example 1:
+
+def g(x):
+    def h():
+        x = 'abc'
+    x = x + 1
+    print('in g(x): x =',x)
+    h()
+    return x 
+
+x = 3
+z = g(x)
+
+example 2:
+def g(x):
+    def h(x):
+        x = x + 1
+        print('in h(x):x =',x)
+    x = x + 1
+    print('in g(x): x =',x)
+    h(x)
+    return x 
+
+x = 3
+z = g(x)
+print('in main program scope: x =',x)
+print('in main program scope: z =',z)
+
+Everything in python is an object even functions are considered as objects.
+
+Functions as objects:
+we can perform aliasing for the functions. 
+Example:
+def f(num):
+    return num ** 2
+
+f(2) -> gives 4 as output
+x = f 
+x(2) -> gives 4 as outp
