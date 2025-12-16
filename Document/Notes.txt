@@ -988,3 +988,11 @@ def f():
 
 val = f()(3,2) #f() returns the function x, which is then called with arguments 3 and 2
 print(val)
+
+Benifits of functions:
+1. Every code is self contained and used to break up the entire logic in to pieces(Code Modularity)
+Code will get divided into modules. 
+
+2. Works on the philosophy of write once use forever!(Code reusability)
+3. Code is organized and coherent (Code readability)
+For instance when the code is divided into modules and we have a error in the login page we directly check in the login window code. This help in code debugging.
