@@ -998,3 +998,6 @@ Code will get divided into modules.
 2. Works on the philosophy of write once use forever!(Code reusability)
 3. Code is organized and coherent (Code readability)
 For instance when the code is divided into modules and we have a error in the login page we directly check in the login window code. This help in code debugging.
+
+RECURSION:
+We mostly prefer iterative code than the recursive code. As recursive codes are inefficient. 
