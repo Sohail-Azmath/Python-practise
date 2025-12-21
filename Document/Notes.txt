@@ -1001,3 +1001,84 @@ For instance when the code is divided into modules and we have a error in the lo
 
 RECURSION:
 We mostly prefer iterative code than the recursive code. As recursive codes are inefficient. 
+
+#iterative code
+def multiply(a, b):
+    res = 0
+    for i in range(b):
+        res += a
+    return res
+
+print(multiply(3, 4))
+
+Converting a itertable code into a recursive code:
+When we multiply 2 numbers. For instance 3 * 4:
+This can also be written as:
+3 * 4 
+= 3 + 3 + 3 + 3
+= 3 + 3 * 3
+= 3 + 3 + 3 * 2
+= 3 + 3 + 3 + 3 * 1
+
+base case (b) = 1, a*b => a
+
+#recursive code:
+
+def multiply(a,b):
+    if b == 1:
+     return a
+    else:
+     a + multiply(a,b-1)
+
+print(multiply(3,4))
+
+when you are asked to add a recursion functionality the data structure which is used to add this is stack. 
+
+While solving with recursion one must find the base condition. 
+
+Example to demonstrate why recursive code is inefficient:
+
+#Recursive code
+def rab(n):
+   if n == 0 or n ==1:
+      return 1
+   else:
+      return rab(n - 1) + rab(n - 2)
+      
+print(rab(48))
+
+#Iterative code
+n = int(input())
+a = 0; b = 1; c = 0
+while(n!=0):
+   c = a+ b
+   a = b
+   b = c
+   n -= 1
+print(c)
+
+When we give input as 48 for the iterative code it gives the output but when we try the same with the recursive code we find that the code it taking long time to execute. Even if we spend a hr we still find that recursive code will not give you the output. 
+
+The time complexity of the above recursive code is 2 to the power n. 
+In recursive code for finding the fib series we calculate the fib of same number twice even after knowing it. this improves the code complexity. 
+Generally in normal recusion once we reach the base case it starts to return the values and we finally reach the result. But when we try to do the same with the fibonaci series we find that each value is getting calculated twice. (i.e. the flow is non linear)
+
+                    fib(4)
+        fib(3)                  fib(2)
+    fib(2)      fib(1)       fib(1)     fib(0)
+fib(1) fib(0)  
+
+The above is the fibonaci series flow chart diagram. 
+
+The time complexity of the above code to the input is exponential. 
+
+We have a concept called memoization which helps us in preventing the high time complexity. This concept is used in Dynamic Programming(DP).
+In this above concept we try to store the values which we calculate. When we encounter the same value which we have calculated we try to fetch it's value instead of recalculating it. 
+Memoization is the part of branch of Dynamic Programming algorithms. 
+As we store the values in the above process the space complexity increases. We compromise in the space complexity while trying to reduce the time complexity. This is called as Space-Time trede off. 
+
+We can import time to see the time taken by the program to execute.
+We declare a 'start' variable where we store the current time.
+i.e. start = time.time() ->this stores the current function. 
+In the next line we call the function and after this we calculate the time taken by the program to execute by:
+ start - time.time() 
