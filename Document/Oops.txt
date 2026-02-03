@@ -1,0 +1,188 @@
+class: It is a blue print
+Object: It is the instance of class
+Every thing in python is the object. 
+
+We have two different types of classes in the python:
+1. Builtin classes
+2. User defined classes
+
+Set, tuple, list => All these are Built-in classes. 
+
+Each Class contains Data/properties and Functions/Observations.
+Using object we can create a inference for each class. 
+Using object we can extract all the functions in the class. 
+
+To understand more about the class and object with example:
+l = [1,2,3]
+print(type(l))
+
+o/p:
+<class 'list'>
+
+we have different functions in list. Append, extend, sort, remove, insert, reverse. 
+To access these functions in the list (class) we use the (object) 'l' as the reference. 
+
+[To explain more about class and object relationship. Here is the example:
+we have launched a course. It consist of domain, duration, perks, hoodies and more details about the class. 
+
+It can be accessed by the students. Students need to enroll in the course to get all the benifits of the class. ]
+
+we can define the class using the below syntax:
+
+    class <classname>:
+    Here "class" is the keyword
+
+we can define the object by using the below syntax:
+
+    <object name> = <class name>()
+
+To name the class we use pasal case. 
+
+
+1. Whenever we want to add variables in the class we use constructor. 
+2. We define the constructor using :
+def __init__(self):
+    self.pin = ''
+    self.balance = 0
+
+Combining both the rules and making a class of atm:
+
+class Atm:
+    #constructor -> It is a special functions. We need not to call this explicitly to execute. 
+
+    def __init__(self):
+    self.pin = ''
+    self.balance = 0
+
+
+In the above example pin and balance are the varibales which are created using a keyword self. 
+
+Things present in the class can only be accessed by creating the object of the class. 
+
+constructor:
+1. It is a function(method -> bcoz it is inside the class). 
+2. We need not to call this function(method -> bcoz it is inside the class) explicitly. It gets called whenever we create the object for the class. 
+3. It is a magic method. Unlike other method we need not to call it explicitly. It gets executed directly when we call the object of the class. 
+
+Methods Vs Functions:
+When we call the entity which is present in the class we define it as method. 
+When we call the entity which is present outside the class we define it as a function. 
+
+For example:
+l = [1,2,3]
+len(l) -> len is function as it is not the part of list class.
+l.append -> append is the method as it is the part of list class. 
+
+Summarization:
+Entity inside the class -> function
+Entity outside the class -> method
+
+
+Class diagram:
+We represent class using class diagram. 
+It is a box, in which we have the name of the class on top. 
+We have Data/Variables/attributes in one box and we have methods in the next box of the class. 
+We use two signs in the class diagram. 
++ -> for the public entities.
+- -> for the private entities. 
+(Applicable for both methods and attributes)
+
+Magic Methods:
+Aslo called as Dunder methods.
+syntax: __name__
+We can make datatypes using these magic methods.
+1. Fraction
+2. Co ordinate 
+
+Constructors in detail:
+Use of the constructor -> constructor is used to write configuration related code. 
+For example:
+The code which we is required to connect with Internet and Database connectivity for our application can be written in the constructors. 
+Because we cannot depend on the user for these operations. So the task which need to be done without the concern of the user and require for the smooth functioning of appilication will be written in the constructor. 
+
+for fun : If GOD is the programmer and earth is the class and humans are the objects what is the code which will be written in the constructor. 
+Always the name of the constructor will be:
+__init__ (<Double underscore>init<Double underscore>) in py. 
+
+Detail explanation about the self:
+It is a default parameter.
+We use self to name all the attributes in the constructor. 
+When we try to call the method in the constructor we use self. 
+
+Golden rule of OOP: 
+The rules(Attributes or methods) can only be accessed by the object.
+
+In a class if a method1(In the above ex: Check_balance) want to speak with method2(Ex: Withdraw) this is only possible using self. 
+Without using self, though both belongs to same class this is not possible. Because only object can access the methods present in the class.  
+
+As we know everything in py is an object. Even self is an object. When we try to find out the id of self [id(self)] in the constructor and the id of the object [id(obj)] created for the class. We find both the addresses as same. 
+
+2005181001664
+2005181001664
+
+This indicates that the obj which we have created is the 'self'. 
+Now when we try to speak with the methods in the same class we use self which means we are using the object which we have created for the class and that object is in the form of 'self'. 
+
+So constructor instruct the class object(i.e. self) and class object(i.e. self) instruct to that method. 
+Whenever we make a function by default it contains a parameter self.
+
+When 'self' parameter is not given to the method(ex: Change_pin) and yet when we create a object for the Change_pin [i.e. obj.Change_pin()] this object is passed to that method as a parameter. 
+
+When we do not pass 'self' as parameter to the method and create the object for that method we find a error which indicates that:
+
+obj.Change_pin()
+TypeError: Atm.Change_pin() takes 0 positional arguments but 1 was given
+
+ 1 was given -> indicates 'obj' was given.  
+ self is the obj which we have created and working. 
+which means though we are not passing any parameter to the method, it shows that 1 parameter was given and there is no parameter to recieve i.e. self is the parameter which is passed to the method. 
+
+Why we need to mention self in the methods. 
+When we create a object for a method, this means that the object is passed as a parameter to that method. When we do not mention 'self' parameter in the method it throws an error stating "takes 0 positional arguments but 1 was given". Here the 1 which was given is self. 
+To ensure the communication between the methods of the same class we need object that too inside the class and that object is 'self'.
+We can rename 'self'.
+The only reason why we use self... It's comfortable naming convention and is used for smooth process.  
+
+Why are we using self before varibales:
+We cannot directly communicate with the data inside the class. To communicate with the data inside the class we use 'self'
+
+Types of constructors:
+1. Parameterized constructor -> we give inputs
+2. Non parameterized constructor. -> does not require any inputs
+
+When we make multiple objects of each class, self always points to the current object. 
+
+Creating our own Data type:
+class Fraction:
+    #parameterized constructor
+    def __init__(self, x,y):
+        self.num = x
+        self.den = y
+
+f1 = Fraction(3,4)
+print(type(f1))
+print(f1)
+
+output:
+<class '__main__.Fraction'>
+<__main__.Fraction object at 0x00000238F5AFF260>
+
+1st line indicate the object belongs to the fraction class.
+2nd line indicate the object created. 
+When we want to display the output in our desired format we use one more magic method called __str__.
+
+__str__()
+this is used to print the object. 
+By defult py will directly enter into this method to print our object. 
+
+__add__()
+we need to fraction objects here to add. 
+we cannot directly add two fraction objects i.e. f1 and f2(f1+f2) to add the two fractions. As the addition is not defined in the fraction class. 
+To ensure that addition of two fractions is possible we take the help of magic method add. Py by default directly enters into this method to return the addition of two fractions. The logic behind the addition is defined here. 
+when we add two objects. One get passed to the self parameter and the other get passed to 'other' parameter.  
+
+Example:
+def __add__(self, other):
+        new_num = self.num * other.den + self.den * other.num
+        new_den = self.den * other.den
+        return '{}/{}'.format(new_num, new_den)

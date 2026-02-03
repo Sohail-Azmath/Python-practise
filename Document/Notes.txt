@@ -1082,3 +1082,48 @@ We declare a 'start' variable where we store the current time.
 i.e. start = time.time() ->this stores the current function. 
 In the next line we call the function and after this we calculate the time taken by the program to execute by:
  start - time.time() 
+
+ Lambda functions:
+ These are one line functions. 
+ syntax: lambda <input>: <expression>
+ Input -> indicate the input which we are giving to the lambda function. 
+ expression -> what we are going to do with the expression. 
+
+ Example:
+ x = lambda x: x**2
+ print(x(9))
+
+ Output: 81
+
+Difference between lambda or normal function:
+1. Lambda function do not have any return type. 
+#It does not return particular value. Instead it returns complete function. 
+2. Lambda functions are written in only one line
+3. Lambda functions cannot be reused. They are made to only use once (Code reusability is absent)
+4. Lambda functions do not have name.  
+
+lambda functions are used along with higher order functions. 
+
+Higher order functions are the type of functions which require one more function as a input (or) the function return statement is a function. 
+
+Higher order functions are used to control the behaviour of the function and also we have controlled the input for the function.
+
+We have other in built functions which already exist in python. 
+They are as follows:
+1. Map 
+2. Filter
+3. Reduce
+
+1. Map
+map() is a built-in Python function that applies a given function to each element of one or more iterables and returns an iterator.
+
+Syntax : map(func, *iterables)
+
+map always returns an map object. 
+It does not return the value. 
+i.e. it returns an iterator, not a list. 
+We need to type cast. 
+It works element-wise
+It is faster than loops for large data.
+
+2. Filter 

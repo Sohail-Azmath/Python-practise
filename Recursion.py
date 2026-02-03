@@ -83,19 +83,29 @@ def rab(n):
 print(rab(9))
 
 
-def lst(l):
-    subsets = [] 
+# def lst(l):
+#     subsets = [] 
     
-    for i in range(len(l)):
-        ele = l[i]
-        new_subsets = []
-        for s in subsets:
-            temp = s.copy()
-            temp.append(ele) 
-            new_subsets.append(temp)
-            subsets = subsets + new_subsets
-    print(subsets)
+#     for i in range(len(l)):
+#         ele = l[i]
+#         new_subsets = []
+#         for s in subsets:
+#             temp = s.copy()
+#             temp.append(ele) 
+#             new_subsets.append(temp)
+#             subsets = subsets + new_subsets
+#     print(subsets)
    
-lt= list(int(input()) for _ in range(3))
-lst(lt)
-print(lt)
+# lt= list(int(input()) for _ in range(3))
+# lst(lt)
+# print(lt)
+
+lst = [1,2,3]
+subsets =[]
+for i in lst:
+   new_subsets = subsets.copy()
+   ele = i
+   new_subsets.add(ele)
+   subsets.append(new_subsets)
+
+print(subsets)
