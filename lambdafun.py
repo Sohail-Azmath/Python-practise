@@ -60,5 +60,28 @@ print(max)
 min = functools.reduce(lambda x,y: x if x<y else y, L1)
 print(min)
 
+
 l3 = [12,11,21,56,21,45,78,25]
 print(functools.reduce(lambda x,y: x if x>y else y, l3))
+
+#List comprehension
+l4 = [i**2 for i in range(10)]
+print(l4)
+
+l5 = [i**2 for i in L]
+print(l5)
+
+fruits = ['apple', 'banana', 'cherry', 'avocado', 'grape'] 
+l5 = [fruit for fruit in fruits if fruit[0]=='a']
+print(l5)
+
+
+# Dictionary comprehension
+d = { 'Name':'John', 'Age':25, 'City':'New York' }
+print(d.items())
+d1 = {key:value for key,value in d.items() if len(key)>3}
+print(d1)
+
+l = [1,2,3,4,5,6,7,8,9]
+d2 = {item:item**2 for item in l if item%2==0}
+print(d2)
