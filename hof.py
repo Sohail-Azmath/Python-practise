@@ -61,9 +61,12 @@ students = [
         'grade': 88
     }
 ]
-y = lambda student:student['name']
-print(y(students))
+y = lambda student: student['name']
+print(list(map(y, students)))
 
 x = map(lambda student:student['name'], students)
 print(x)
 
+
+a = list(filter(lambda x: x>4, l))
+print(a)
